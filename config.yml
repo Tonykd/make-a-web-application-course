@@ -1,0 +1,16 @@
+title: Make a web application
+description: Use your work experience as a web application
+template:
+  repo: make-a-web-application-template
+  name: make-a-web-application
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
